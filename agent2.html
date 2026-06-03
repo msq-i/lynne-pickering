@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Agent 1</title>
+  <title>Agent 2</title>
   <link rel="stylesheet" href="./styles.css" />
 </head>
-<body class="theme-pink">
+<body class="theme-blue">
   <nav class="switcher">
-    <a href="./index.html" class="tab active">Agent 1</a>
-    <a href="./agent2.html" class="tab">Agent 2</a>
+    <a href="./index.html" class="tab">Agent 1</a>
+    <a href="./agent2.html" class="tab active">Agent 2</a>
   </nav>
 
   <button id="orb" class="orb" data-state="idle" aria-label="Start conversation"></button>
@@ -17,6 +17,7 @@
 
   <script type="module">
     import { initAgent } from "./agent.js";
+    // TODO: swap in the second agent's ID — same as Agent 1 for now.
     initAgent({ agentId: "agent_5801kssjr261etmb06exam9at88x" });
   </script>
 </body>
